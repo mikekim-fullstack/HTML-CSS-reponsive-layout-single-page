@@ -1,5 +1,5 @@
 :root {
-    --bg-content-color: rgb(42, 41, 41);
+    --bg-content-color: rgba(42, 41, 41, 1);
 }
 
 * {
@@ -12,7 +12,7 @@ header {
     background-image: url('./images/bg.jpg');
 
     background-position: center;
-
+    background-size: cover;
     padding: 52px 30px 30px 30px;
     color: white;
 
@@ -22,7 +22,7 @@ header {
 }
 
 header::after {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(42, 41, 41, .8);
     content: '';
     width: 100%;
     height: 100%;
@@ -38,6 +38,7 @@ header::after {
     margin: auto;
     position: relative;
     z-index: 1;
+    padding: 50px 0;
 
 }
 
@@ -201,9 +202,6 @@ footer .middle-content {
     color: white;
 }
 
-/* footer .middle-content .email {
-    color: black;
-} */
 
 footer .middle-content .contact {
     background-color: dodgerblue;
@@ -231,7 +229,9 @@ footer .middle-content .about {
     .middle-container .card {
         /* margin: 0 10px; */
         margin: 20px 5px;
+        width: 33.33%;
     }
+
 
     footer .middle-content {
 
